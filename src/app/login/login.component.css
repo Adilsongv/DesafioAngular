@@ -1,0 +1,58 @@
+
+
+.box{
+    float: left;
+    box-shadow: 1px 1px black;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 12PX;
+    padding: 30px;
+    margin-left: 16%;
+    margin-top: 5%;
+    padding-top: 5%;
+    text-align: center;
+}
+mat-form-field{
+    border-radius: 15px;
+    height: 50px;
+    border: 1px solid black ;
+    margin-bottom: 10px;
+    width: 280px;
+    display: inline-flex;
+    text-align: justify;
+}
+::ng-deep .mat-form-field-underline {
+    display: none;
+}
+.img{
+    float: left;
+    margin-left: 50px;
+    margin-top: 2%;
+    padding-top: 5%;
+   
+}
+.img img{
+    width: 400px;
+    height: 370px;
+}
+#login{
+    background-color: #167A9A;
+    height: 36px;
+    width: 150px;
+    margin-top: 5%;
+}
+#cadastro{
+    background-color: #fff;
+    color: black;
+    margin-top: 15%;
+    margin-left: 55%;
+}
+#visualizar{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: -5px;
+}
+#cadastrar{
+   margin-left: 1px;
+}

@@ -1,0 +1,41 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@700&display=swap');
+   
+    #infoEmp{
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-left: 30px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 21.09px;
+      }
+    .info{
+      font-family: 'Inter', sans-serif;
+      padding-left: 50px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 16.94px;
+    }
+    #rodape{
+        background-color: rgba(255, 255, 255, 0.26);
+        height: 15%;
+        padding: 30px;
+        padding-left: 15%;
+        margin-top: 4%;
+    }
+    #left{
+        margin-left: -5px;
+        width: 70%;
+        float: left;
+    }
+    #right{
+        width: 22%;
+        float: right;
+        margin-top: 20px;
+    }
+    .clearFix{
+        clear: both;
+    }
+
+
+  

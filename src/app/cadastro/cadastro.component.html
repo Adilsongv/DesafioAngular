@@ -1,0 +1,40 @@
+
+<div class="box">
+    <h1>Faça seu cadastro</h1>
+    <form class="example-form">
+      <mat-form-field class="E-mail" appearance="fill">
+        <mat-label>E-mail</mat-label>
+        <input matInput placeholder="E-mail">
+      </mat-form-field>
+      <mat-form-field class="senha" appearance="fill" >
+        <mat-label>Senha</mat-label>
+        <input matInput placeholder="Senha" type="password" >
+        <span id="visualizar">
+          <img src="/assets/eye.png" alt="image">
+        </span>
+      <br/>
+
+     
+      
+    </mat-form-field><br />
+    
+    <div id="termo" style="width: 50px;">
+      <mat-checkbox class="example-margin" >
+          Eu concordo com os <a href="/assets/termo.pdf" > Termos e Condições de Uso do <br/>PapoCast </a>
+       </mat-checkbox>
+  </div>
+     <br/>
+
+      <button mat-flat-button color="primary" id="login" >Cadastrar - se</button><br />
+
+      <div id="btnCadastro">
+        <button mat-flat-button (click)="Logar()">
+          <span id="imgCadastrar">
+            <img src="/assets/esquerda.png" alt="image">
+            Faça Login
+          </span>
+        </button><br />
+      </div>
+    </form>
+  </div>
+  

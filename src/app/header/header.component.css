@@ -1,0 +1,54 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@700&display=swap');
+   
+    
+    #container{
+        padding-top: 2%;
+        background-color: #167A9A;;
+        height: 20%;
+        /* display: inline-flex;
+        flex: auto; */
+        
+    width: 100%;    
+    }
+    #logo{
+        width: 30%;
+        float: left;
+        padding-left: 50px;
+        padding-top: -13%;
+    }
+    #pesquisar{
+        width: 250px;
+        float: left;
+        margin-top: -2px;
+        margin-left: 5%;
+        height: 25px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background-color: #167A9A;
+        padding-right: 50px;
+        border-bottom-color: #fff;
+        padding-left: 40px;
+    }
+    input::placeholder{
+        color: #fff;
+        padding-left: 15px;
+    }
+        
+    #lupa{
+        margin-left: -25%;
+    }
+    
+    #user{
+        float: right;
+        margin-right: 1%;
+        color: white;
+    }
+    .clearFix{
+        clear: both;
+    }
+
+
+  

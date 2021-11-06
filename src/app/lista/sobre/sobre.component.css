@@ -1,0 +1,49 @@
+#container{
+    background-color: #fff;
+    margin-top: 100px;
+}
+#todos{
+    position: absolute;
+    width: 185px;
+    height: 28px;
+    left: 65px;
+    top: 184px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #494D4B;
+}
+table{
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-top: 160px;
+    margin-bottom: 50px;
+    width: auto;
+}
+
+table th{
+    text-align: left;
+}
+table td{
+    padding-top: 15px;
+    text-align: left;
+}
+.coluna{
+    padding-left: 60px;
+}
+
+#barra{
+
+
+position: absolute;
+width: 550px;
+height: 0px;
+left: 911.77px;
+top: 229px;
+
+border: 1px solid #494D4B;
+transform: rotate(90.18deg);
+
+}

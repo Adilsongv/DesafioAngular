@@ -28,6 +28,7 @@ import { Card03Component } from './card03/card03.component';
 import { Card04Component } from './card04/card04.component';
 import { Card05Component } from './card05/card05.component';
 import { Card06Component } from './card06/card06.component';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { Card06Component } from './card06/card06.component';
     Card04Component,
     Card05Component,
     Card06Component,
+    CardComponent,
     
   ],
   imports: [

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ListaPapoCast } from './lista.conts';
 
 @Component({
   selector: 'app-lista',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class ListaComponent implements OnInit {
 
   CompShow = "";
-
+  urlImg = '';
+  subTittle = '';
+  description = ``;
+  list = ListaPapoCast;
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +20,11 @@ export class ListaComponent implements OnInit {
   }
   card01(){
     this.CompShow = "card01"
+  }
+  changeItem(item:ListaPapoCast) {
+    this.urlImg = item.urlImg;
+    this.subTittle = item.subTittle;
+    this.description = item.description;
   }
 
 }

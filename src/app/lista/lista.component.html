@@ -3,10 +3,29 @@
 <table style="background-color: #fff;">
     <tr>
         <td>
-            <app-sobre> </app-sobre>
+    <tr>
+        <th colspan="2">Papodcast</th>
+        <th class="coluna">APRESENTADO</th>
+        <th class="coluna">DATA</th>
+        <th class="coluna">Duração</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let item of list">
+        <td><img src={{item.urlMiniImg}} alt="rumo" style="width: 36px; height: 36px;"></td>
+        <td class="coluna">{{item.subTittle}}</td>
+        <td class="coluna">PapoCast</td>
+        <td class="coluna">{{item.date}}</td>
+        <td class="coluna">{{item.duration}}</td>
+        <td class="coluna">
+            <a (click)="changeItem(item)">
+                <img src="assets/Vector.png" alt="vetor">
+            </a>
         </td>
-        <td>
-            <app-card03 ></app-card03>
-        </td>
+    </tr>
+    </td>
+    <td>
+        <app-card [urlImg]="urlImg" [subTittle]="subTittle" [description]="description">
+        </app-card>
+    </td>
     </tr>
 </table>

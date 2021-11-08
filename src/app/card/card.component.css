@@ -1,0 +1,105 @@
+/* fontes google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+#container{
+    position: relative;
+    width: 432px;
+    height: 426px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-top: -2%;
+}
+#img{
+    position: absolute;
+    height:151px;
+    width: 389px;
+    border-radius: 16px;
+    background-color: #c4c4c4;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#title{
+    position: absolute;
+    width: 352px;
+    height: 19px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #494D4B;
+    margin-top: 185px;
+    margin-left: 20px;    
+}
+#sub{
+    position: absolute;
+    width: 352px;
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #494D4B;
+    margin-top: 215px;
+    margin-left: 20px;    
+}
+#texto{
+    position: absolute;
+    width: 352px;
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #494D4B;
+    margin-top: 240px;
+    margin-left: 20px;    
+}
+#blog{
+    position: absolute;
+    width: 65px;
+    height: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #494D4B;
+    margin-top: 320px;
+    margin-left: 340px;    
+}
+#data_cast{
+    position: absolute;
+    width: 69px;
+    height: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #494D4B;
+    margin-top: 360px;
+    margin-left: 260px;
+}
+#tempo_cast{
+    position: absolute;
+    width: 39px;
+    height: 17px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #494D4B;
+    margin-top: 360px;
+    margin-left: 360px;
+}
+#header{
+    margin-top: -100px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+}

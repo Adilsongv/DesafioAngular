@@ -1,29 +1,41 @@
-#container{
+#container {
     background-color: #fff;
     padding-top: 3%;
 }
-#header{
+
+#header {
     margin-top: 7px;
     margin-left: 250px;
 }
-table{
+
+table {
     width: 58%;
     padding-left: 35px;
     height: 530px;
     margin-top: 30px;
     border-right: 1px solid black;
 }
-table td{
+
+table td {
     padding-bottom: 15px;
 }
-table th{
+
+table th {
     padding-bottom: 15px;
     text-align: left;
 }
-.coluna{
+
+.coluna {
     padding-left: 30px;
 }
-#direita{
+
+#direita {
     float: right;
     margin-top: -36%;
+}
+
+.header {
+    margin-top: -30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
 }

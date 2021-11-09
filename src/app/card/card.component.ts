@@ -1,3 +1,4 @@
+import { VIRTUAL_SCROLL_STRATEGY } from '@angular/cdk/scrolling';
 import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
@@ -14,9 +15,16 @@ export class CardComponent implements OnInit {
   avançado, trazendo a visão prática da utilização da linguagem de forma simples e dinâmica .`;
   @Input() date? = '25 Fev 21';
   @Input() duration? = '4:27';
-  constructor() { }
+enabled = "false";
+  constructor() {
+
+   }
 
   ngOnInit(): void {
+  }
+
+  Voltar(){
+    this.enabled ="true";
   }
 
 }

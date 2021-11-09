@@ -16,6 +16,8 @@ export class ListaComponent implements OnInit {
   list = ListaPapoCast;
   titleList = 'Todos os episódios';
 
+  enabled = "false";
+
   constructor() { }
 
   ngOnInit(): void {
@@ -28,6 +30,9 @@ export class ListaComponent implements OnInit {
     this.description = item.description;
     this.date = item.date;
     this.duration = item.duration;
+  }
+  voltar(){
+    this.enabled = "true";
   }
 
 }

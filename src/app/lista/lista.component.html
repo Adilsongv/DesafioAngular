@@ -1,38 +1,35 @@
 <app-header></app-header>
 <div id="container">
-
-
-    
-
-<table style="background-color: #fff;">
-    <tr colspan="6"><h1 id="titulo">{{titleList}}</h1></tr>
-    <tr>
-        <td>
-    <tr>
-        <th colspan="2">Papodcast</th>
-        <th class="coluna">APRESENTADO</th>
-        <th class="coluna">DATA</th>
-        <th class="coluna">Duração</th>
-        <th></th>
-    </tr>
-    <tr *ngFor="let item of list">
-        <td><img src={{item.urlMiniImg}} alt="rumo" style="width: 36px; height: 36px;"></td>
-        <td class="coluna">{{item.subTittle}}</td>
-        <td class="coluna">PapoCast</td>
-        <td class="coluna">{{item.date}}</td>
-        <td class="coluna">{{item.duration}}</td>
-        <td class="coluna">
-            <a (click)="changeItem(item)">
-                <img src="assets/Vector.png" alt="vetor">
-            </a>
+    <table style="background-color: #fff;">
+        <tr colspan="6"><h1 id="titulo">{{titleList}}</h1></tr>
+        <tr>
+            <td>
+        <tr>
+            <th colspan="2">Papodcast</th>
+            <th class="coluna">APRESENTADO</th>
+            <th class="coluna">DATA</th>
+            <th class="coluna">Duração</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let item of list">
+            <td><img src={{item.urlMiniImg}} alt="rumo" style="width: 36px; height: 36px;"></td>
+            <td class="coluna">{{item.subTittle}}</td>
+            <td class="coluna">PapoCast</td>
+            <td class="coluna">{{item.date}}</td>
+            <td class="coluna">{{item.duration}}</td>
+            <td class="coluna">
+                <a (click)="changeItem(item)">
+                    <img src="assets/Vector.png" alt="vetor">
+                </a>
+            </td>
+        </tr>
         </td>
-    </tr>
-    </td>
-    <td>
-        <app-card [urlImg]="urlImg" [subTittle]="subTittle" [description]="description" [date]="date" [duration]="duration">
-        </app-card>
-    </td>
-    </tr>
-</table>
+    </table>
+<section id="direita">
+    <app-card *ngif="!enabled" [urlImg]="urlImg" [subTittle]="subTittle" [description]="description" [date]="date" [duration]="duration">
+    </app-card>
+
+    <app-destaque *ngIf = "enabled"></app-destaque> 
+</section>
 
 </div>

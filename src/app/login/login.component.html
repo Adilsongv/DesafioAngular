@@ -4,17 +4,17 @@
   <form class="example-form">
     <mat-form-field class="E-mail" appearance="fill">
       <mat-label>E-mail</mat-label>
-      <input matInput placeholder="E-mail">
+      <input matInput placeholder="E-mail" id="idEmail">
     </mat-form-field>
     <mat-form-field class="senha" appearance="fill">
       <mat-label>Senha</mat-label>
-      <input matInput placeholder="Senha">
+      <input type="password" matInput placeholder="Senha" id="idSenha">
       <span id="visualizar">
         <img src="/assets/eye.png" alt="image">
       </span>
     </mat-form-field><br />
 
-    <button mat-flat-button color="primary" id="login">Entrar</button><br />
+    <button mat-flat-button color="primary" id="login" (click)="logar()" >Entrar</button><br />
     <div id="cadastro">
       <button mat-flat-button (click)="AbrirCadastro()">Faça seu cadastro
         <span id="cadastrar">

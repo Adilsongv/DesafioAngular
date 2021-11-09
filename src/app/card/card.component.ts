@@ -23,8 +23,6 @@ enabled = "false";
   ngOnInit(): void {
   }
 
-  Voltar(){
-    this.enabled ="true";
-  }
+ 
 
 }

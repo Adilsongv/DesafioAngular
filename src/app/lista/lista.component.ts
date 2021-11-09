@@ -15,8 +15,9 @@ export class ListaComponent implements OnInit {
   duration = '';
   list = ListaPapoCast;
   titleList = 'Todos os episódios';
+  titleCast= '';
 
-  enabled = "false";
+  enabled = "true";
 
   constructor() { }
 
@@ -31,8 +32,8 @@ export class ListaComponent implements OnInit {
     this.date = item.date;
     this.duration = item.duration;
   }
-  voltar(){
-    this.enabled = "true";
+  Voltar(){
+    this.enabled = "false";
   }
 
 }

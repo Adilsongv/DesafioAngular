@@ -26,10 +26,15 @@
         </td>
     </table>
 <section id="direita">
-    <app-card *ngif="!enabled" [urlImg]="urlImg" [subTittle]="subTittle" [description]="description" [date]="date" [duration]="duration">
+    <div id="header">
+        <h1 id="titulo">{{titleCast}}</h1>
+    
+            <span id="link"><img id="imagem" src="assets/back.png" (click)="Voltar()"> Voltar ultimos lançamentos </span>
+    </div>
+    <app-card  [urlImg]="urlImg" [subTittle]="subTittle" [description]="description" [date]="date" [duration]="duration">
     </app-card>
 
-    <app-destaque *ngIf = "enabled"></app-destaque> 
+    <!-- <app-destaque *ngIf = "enabled"></app-destaque>  -->
 </section>
 
 </div>

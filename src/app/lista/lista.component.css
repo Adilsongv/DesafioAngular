@@ -32,6 +32,8 @@ table th {
 #direita {
     float: right;
     margin-top: -38%;
+    width: auto;
+    padding-left: -150px;
 }
 
 .header {
@@ -40,7 +42,8 @@ table th {
     padding-left: 80px;
 }
 #link{
-    padding-left: -40px;
+    position: relative;
+    padding-left: -150px;
     border: none;
     background-color: #fff;
 }

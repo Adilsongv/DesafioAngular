@@ -12,8 +12,10 @@ import Swal, { SweetAlertShowClass } from 'sweetalert2';
 export class LoginComponent implements OnInit {
   tittle: string = "Faça Login";
 
-  Senha = document.getElementById("idSenha");
-  email = document.getElementById("idEmail");
+  senha="12345";
+  email="adilsongv@gmail.com";
+  Senha =  document.getElementById("idEmail") ;
+  Email = document.getElementById("idEmail");
   
   constructor(
     private router: Router
@@ -28,7 +30,8 @@ export class LoginComponent implements OnInit {
   }
 
   logar(){
-    if(!this.Senha  && !this.email){
+        if(this.Senha == null && this.Email == null){
+          Bemvindo()
         this.router.navigate(['/lista']);
     }
     else{
@@ -38,5 +41,8 @@ export class LoginComponent implements OnInit {
   function simpleAlert() {
   Swal.fire("Usuario ou Senha invalida!");
   }
+  function Bemvindo() {
+    Swal.fire("Bem vindo ao Papo Cast!");
+    }
 }
 }

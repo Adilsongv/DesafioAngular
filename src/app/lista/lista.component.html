@@ -27,11 +27,13 @@
                 </tr>
             </td>
     </table>
+
     <div id="direita" *ngIf="enabled">
         <h1 id="lancamento">{{titleDefault}}</h1>
 
         <app-destaque></app-destaque>
     </div>
+    
     <div id="direita" *ngIf="!enabled">
         <div clas='header'>
             <h1 id="titulo">{{titleCast}}</h1>

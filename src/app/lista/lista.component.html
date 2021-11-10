@@ -1,40 +1,46 @@
 <app-header></app-header>
 <div id="container">
     <table style="background-color: #fff;">
-        <tr colspan="6"><h1 id="titulo">{{titleList}}</h1></tr>
+        <tr colspan="6">
+            <h1 id="titulo">{{titleList}}</h1>
+        </tr>
         <tr>
             <td>
-        <tr>
-            <th colspan="2">Papodcast</th>
-            <th class="coluna">APRESENTADO</th>
-            <th class="coluna">DATA</th>
-            <th class="coluna">Duração</th>
-            <th></th>
-        </tr>
-        <tr *ngFor="let item of list">
-            <td><img src={{item.urlMiniImg}} alt="rumo" style="width: 36px; height: 36px;"></td>
-            <td class="coluna">{{item.subTittle}}</td>
-            <td class="coluna">PapoCast</td>
-            <td class="coluna">{{item.date}}</td>
-            <td class="coluna">{{item.duration}}</td>
-            <td class="coluna">
-                <a (click)="changeItem(item)">
-                    <img src="assets/Vector.png" alt="vetor">
-                </a>
+                <tr>
+                    <th colspan="2">Papodcast</th>
+                    <th class="coluna">APRESENTADO</th>
+                    <th class="coluna">DATA</th>
+                    <th class="coluna">Duração</th>
+                    <th></th>
+                </tr>
+                <tr *ngFor="let item of list">
+                    <td><img src={{item.urlMiniImg}} alt="rumo" style="width: 36px; height: 36px;"></td>
+                    <td class="coluna">{{item.subTittle}}</td>
+                    <td class="coluna">PapoCast</td>
+                    <td class="coluna">{{item.date}}</td>
+                    <td class="coluna">{{item.duration}}</td>
+                    <td class="coluna">
+                        <a (click)="changeItem(item)">
+                            <img src="assets/Vector.png" alt="vetor">
+                        </a>
+                    </td>
+                </tr>
             </td>
-        </tr>
-        </td>
     </table>
-<section id="direita">
-    <div id="header">
-        <h1 id="titulo">{{titleCast}}</h1>
-    
-            <span id="link"><img id="imagem" src="assets/back.png" (click)="Voltar()"> Voltar ultimos lançamentos </span>
-    </div>
-    <app-card  [urlImg]="urlImg" [subTittle]="subTittle" [description]="description" [date]="date" [duration]="duration">
-    </app-card>
+    <div id="direita" *ngIf="enabled">
+        <h1 id="lancamento">{{titleDefault}}</h1>
 
-    <!-- <app-destaque *ngIf = "enabled"></app-destaque>  -->
-</section>
+        <app-destaque></app-destaque>
+    </div>
+    <div id="direita" *ngIf="!enabled">
+        <div clas='header'>
+            <h1 id="titulo">{{titleCast}}</h1>
+
+            <button id="link" (click)="voltar()"><img id="imagem" src="assets/back.png"> Voltar ultimos lançamentos
+            </button>
+        </div>
+        <app-card [urlImg]="urlImg" [subTittle]="subTittle" [description]="description" [date]="date" [duration]="duration">
+        </app-card>
+    </div>
 
 </div>

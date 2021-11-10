@@ -15,9 +15,9 @@ export class ListaComponent implements OnInit {
   duration = '';
   list = ListaPapoCast;
   titleList = 'Todos os episódios';
-  titleCast= '';
-
-  enabled = "true";
+  titleCast= 'Detalhe PapoCast'
+  titleDefault ='Últimos lançamentos'
+  enabled = true;
 
   constructor() { }
 
@@ -26,14 +26,16 @@ export class ListaComponent implements OnInit {
   }
 
   changeItem(item:ListaPapoCast) {
+    this.enabled = false;
     this.urlImg = item.urlImg;
     this.subTittle = item.subTittle;
     this.description = item.description;
     this.date = item.date;
     this.duration = item.duration;
+    
   }
-  Voltar(){
-    this.enabled = "false";
+  voltar(){
+    this.enabled = true;
   }
 
 }
